@@ -52,3 +52,4 @@ tzdata==2025.2
 uritemplate==4.1.1
 urllib3==2.4.0
 zope.interface==7.2
+dj-database-url

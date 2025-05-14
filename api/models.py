@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from users.models import User
+from cloudinary.models import CloudinaryField
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -21,7 +22,7 @@ class Book(models.Model):
     release_year = models.IntegerField(null=False, blank=False)
     price = models.FloatField(null=False, blank=False)
     author = models.CharField(max_length=100, null=False, blank=False, default='')
-    image = models.ImageField(upload_to='book_images/', null=True, blank=True)
+    image = CloudinaryField('image', blank=True, null=True)  
     added_by = models.ForeignKey(
         User, on_delete=models.SET_NULL, null=True, blank=True, related_name='books'
     )

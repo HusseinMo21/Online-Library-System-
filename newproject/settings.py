@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'users',
     'rest_framework_simplejwt',
     'drf_yasg',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -165,6 +167,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.getenv('CLOUDINARY_URL')
+}
 
 REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -200,3 +209,5 @@ FRONTEND_URL = 'http://localhost:5173'
 
 
 EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
+
+

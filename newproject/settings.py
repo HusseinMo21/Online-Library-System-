@@ -175,6 +175,11 @@ REST_FRAMEWORK = {
 
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173',
+    'https://web-production-f9c35.up.railway.app',
+]
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173"
 ]

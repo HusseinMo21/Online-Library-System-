@@ -42,6 +42,8 @@ import os
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_interface',
+    'colorfield',         
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,7 +60,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 ]
 
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

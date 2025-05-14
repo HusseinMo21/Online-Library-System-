@@ -10,10 +10,12 @@ coreapi==2.3.3
 coreschema==0.0.4
 cryptography==44.0.3
 daphne==4.1.2
+dj-database-url==2.3.0
 Django==5.2
 django-cors-headers==4.7.0
 django-environ==0.12.0
 django-filter==25.1
+django-material==1.12.0
 django-rest-swagger==2.2.0
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
@@ -44,6 +46,7 @@ resend==2.9.0
 service-identity==24.2.0
 setuptools==80.4.0
 simplejson==3.20.1
+six==1.17.0
 sqlparse==0.5.3
 Twisted==24.11.0
 txaio==23.1.1
@@ -51,5 +54,5 @@ typing_extensions==4.13.2
 tzdata==2025.2
 uritemplate==4.1.1
 urllib3==2.4.0
+waitress==3.0.2
 zope.interface==7.2
-dj-database-url

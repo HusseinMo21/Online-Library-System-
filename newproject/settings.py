@@ -191,10 +191,13 @@ REST_FRAMEWORK = {
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:5173',
     'https://web-production-f9c35.up.railway.app',
+    'https://online-library-system-front-end-kb5y.vercel.app/'
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://web-production-f9c35.up.railway.app",
+    "https://online-library-system-front-end-kb5y.vercel.app/"
 ]
 
 MEDIA_URL = '/media/'

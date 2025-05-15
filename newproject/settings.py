@@ -204,7 +204,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 AUTH_USER_MODEL = 'users.User'
 
-FRONTEND_URL = 'http://localhost:5173' 
+FRONTEND_URL = os.getenv('FRONTEND_URL')
 
 
 
